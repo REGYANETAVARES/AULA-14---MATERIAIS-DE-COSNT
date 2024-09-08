@@ -1,0 +1,171 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333; /* Cor do texto padrão */
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    color: #4CAF50;
+}
+
+/* Cabeçalho */
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4CAF50; /* Cor verde do cabeçalho */
+}
+
+.titulo-cabecalho {
+    font-size: 36px;
+    color: #fff; /* Cor branca para o texto do cabeçalho */
+}
+
+/* Ajuste da logo */
+.logo img {
+    max-width: 150px; /* Ajuste o tamanho máximo da logo conforme necessário */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centraliza a logo horizontalmente */
+}
+
+.slogan {
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+    width: 100%; /* Faz a frase ocupar toda a largura da logo */
+}
+
+/* Alternativa se a logo estiver dentro de um contêiner fixo */
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo dentro do contêiner */
+    align-items: center;
+}
+
+/* Links de navegação */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    background-color: #333;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Seção de Boas-vindas */
+#boas-vindas {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Destaques dos Produtos */
+#destaques-produtos {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.galeria-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.produto {
+    flex: 1 1 calc(25% - 10px); /* 25% da largura menos o gap */
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    color: #333; /* Cor do texto dos produtos */
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+}
+
+.texto-sobre-imagem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff; /* Cor do texto sobre a imagem */
+}
+
+.texto-sobre-imagem h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.texto-sobre-imagem p {
+    margin: 10px 0 0;
+    font-size: 16px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333; /* Fundo escuro para o rodapé */
+    color: #fff; /* Texto branco */
+    padding: 20px;
+    text-align: center;
+}
+
+footer form input, footer form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+}
+
+footer form input[type="submit"] {
+    background-color: #4CAF50; /* Cor verde para o botão de envio */
+    color: #fff;
+    cursor: pointer;
+}
+
+footer form input[type="submit"]:hover {
+    background-color: #45a049;
+}

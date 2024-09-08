@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Loja de Materiais de Construção</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Nossos Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Entre em Contato Conosco</h1>
+        <form id="contato" method="post" action="mailto:seuemail@exemplo.com">
+            <label for="nomeContato">Nome:</label>
+            <input type="text" name="tNome" id="nomeContato" required>
+
+            <label for="emailContato">E-mail:</label>
+            <input type="email" name="tEmail" id="emailContato" required>
+
+            <label for="mensagemContato">Mensagem:</label>
+            <textarea name="tMensagem" id="mensagemContato" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+</html>
